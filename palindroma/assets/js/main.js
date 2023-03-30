@@ -16,3 +16,12 @@ button.addEventListener('click', function() {
 
     risposta.innerHTML = `<p>${word}</p>`
 })
+
+/*
+-input text per far scrivere una parola all'utente(word)
+-button per far partire il ciclo
+-se (word) al contrario = (word)
+    allora la parola è palindroma
+-se (word) al contrario != (word)
+    allora la parola non è palindroma
+*/

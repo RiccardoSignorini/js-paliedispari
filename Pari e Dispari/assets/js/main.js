@@ -6,3 +6,20 @@ Sommiamo i due numeri
 Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto.
 */
+
+let num1 = parseFloat( document.querySelector('#num').value );
+
+/*
+-checkbox pari(scelta1)
+-checkbox dispari(scelta2)
+
+input number per la scrittura di un numero(num1)
+
+generare un numero casualmente(num2):
+-ha selezionato pari
+    se (num1+num2) diviso 2 = 0 allora ha vinto
+    se (num1+num2) diviso 2 != 0 allora ha perso
+-ha selezionato dispari
+    se (num1+num2) diviso 2 != 0 allora ha vinto
+    se (num1+num2) diviso 2 = 0 allora ha perso
+*/

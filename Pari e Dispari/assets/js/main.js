@@ -24,50 +24,38 @@ play.addEventListener('click', function() {
     let num2 = randomNum(1, 5)
     // SCEGLIE PARI
     if(choise = 'Pari'){
+        // SCELTA UTENTE
+        document.querySelector('#printchoise').innerHTML = '<span>La tua scelta: Pari</span>'
+        // NUMERO UTENTE
+        document.querySelector('#usernumber').innerHTML = `<span>Il tuo numero: ${num1}</span>`
+        // NUMERO PC
+        document.querySelector('#pcnumber').innerHTML = `<span>Numero PC: ${num2}</span>`
         // SE VINCE
         if((num1+num2)%2==0){
-            // SCELTA UTENTE
-            document.querySelector('#printchoise').innerHTML = '<span>La tua scelta: Pari</span>'
-            // NUMERO UTENTE
-            document.querySelector('#usernumber').innerHTML = `<span>Il tuo numero: ${num1}</span>`
-            // NUMERO PC
-            document.querySelector('#pcnumber').innerHTML = `<span>Numero PC: ${num2}</span>`
             // RISULTATO
             document.querySelector('#results').innerHTML = '<span>Risultato: Hai Vinto!</span>'  
         }
         // SE PERDE
         if((num1+num2)%2!=0){
-            // SCELTA UTENTE
-            document.querySelector('#printchoise').innerHTML = '<span>La tua scelta: Pari</span>'
-            // NUMERO UTENTE
-            document.querySelector('#usernumber').innerHTML = `<span>Il tuo numero: ${num1}</span>`
-            // NUMERO PC
-            document.querySelector('#pcnumber').innerHTML = `<span>Numero PC: ${num2}</span>`
             // RISULTATO
             document.querySelector('#results').innerHTML = '<span>Risultato: Ha vinto il PC!</span>' 
             }
 
     // SCEGLIE DISPARI
     } else if(choise = 'Dispari'){
+        // SCELTA UTENTE
+        document.querySelector('#printchoise').innerHTML = '<span>La tua scelta: Dispari</span>'
+        // NUMERO UTENTE
+        document.querySelector('#usernumber').innerHTML = `<span>Il tuo numero: ${num1}</span>`
+        // NUMERO PC
+        document.querySelector('#pcnumber').innerHTML = `<span>Numero PC: ${num2}</span>`
         // SE VINCE
         if((num1+num2)%2!=0){
-            // SCELTA UTENTE
-            document.querySelector('#printchoise').innerHTML = '<span>La tua scelta: Dispari</span>'
-            // NUMERO UTENTE
-            document.querySelector('#usernumber').innerHTML = `<span>Il tuo numero: ${num1}</span>`
-            // NUMERO PC
-            document.querySelector('#pcnumber').innerHTML = `<span>Numero PC: ${num2}</span>`
             // RISULTATO
             document.querySelector('#results').innerHTML = '<span>Risultato: Hai Vinto!</span>'    
         }       
         // SE PERDE
         if((num1+num2)%2==0){
-            // SCELTA UTENTE
-            document.querySelector('#printchoise').innerHTML = '<span>La tua scelta: Dispari</span>'
-            // NUMERO UTENTE
-            document.querySelector('#usernumber').innerHTML = `<span>Il tuo numero: ${num1}</span>`
-            // NUMERO PC
-            document.querySelector('#pcnumber').innerHTML = `<span>Numero PC: ${num2}</span>`
             // RISULTATO
             document.querySelector('#results').innerHTML = '<span>Risultato: Ha vinto il PC!</span>' 
             }

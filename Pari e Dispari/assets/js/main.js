@@ -8,6 +8,15 @@ Dichiariamo chi ha vinto.
 */
 
 let num1 = parseFloat( document.querySelector('#num').value );
+let num2 = Math.floor(Math.random()*5)+1;
+
+const play = document.querySelector('button')
+console.log(num2)
+
+play.addEventListener('click', function() {
+    
+})
+
 
 /*
 -checkbox pari(scelta1)

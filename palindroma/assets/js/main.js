@@ -8,20 +8,40 @@ let word = document.querySelector('#input').value;
 
 const button = document.querySelector('#button');
 
-const risposta = document.querySelector('#risposta')
+let risposta = document.querySelector('#risposta')
+
+
 
 button.addEventListener('click', function() {
 
     word = document.querySelector('#input').value;
 
-    risposta.innerHTML = `<p>${word}</p>`
+    risposta = document.querySelector('#risposta')
+
+    function reverse(word){
+        let reverseWord = ''
+
+        for(let i=word.length-1; i>=0; i--){
+            reverseWord += word[i]
+            return reverseWord 
+        }
+    }
+
+    let palindroma = reverse(word)
+
+    if(word==palindroma){
+        risposta.innerHTML = `<p>La parola ${word} è palindroma!</p>`    
+    } else {
+        risposta.innerHTML = `<p>La parola ${word} non è palindroma!</p>` 
+    }
+
 })
 
 /*
 -input text per far scrivere una parola all'utente(word)
 -button per far partire il ciclo
 -se (word) al contrario = (word)
-    allora la parola è palindroma
+    allora la parola è palindroma --> scrivere in pagina che (word) è palindroma
 -se (word) al contrario != (word)
-    allora la parola non è palindroma
+    allora la parola non è palindroma --> scrivere in pagina che (word) non è palindroma
 */

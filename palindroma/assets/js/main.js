@@ -4,31 +4,34 @@ Chiedere all’utente di inserire una parola
 Creare una funzione per capire se la parola inserita è palindroma
 */
 
+// COSTANTI
 let word = document.querySelector('#input').value;
 
 const button = document.querySelector('#button');
 
 let risposta = document.querySelector('#risposta')
 
-
-
+// FUNZIONE BOTTONE
 button.addEventListener('click', function() {
 
     word = document.querySelector('#input').value;
 
     risposta = document.querySelector('#risposta')
-
-    function reverse(word){
+    // FUNZIONE
+    function reverse(word){ //ciao
         let reverseWord = ''
 
         for(let i=word.length-1; i>=0; i--){
+
             reverseWord += word[i]
-            return reverseWord 
         }
+        return reverseWord
     }
 
     let palindroma = reverse(word)
+    console.log(palindroma)
 
+    // STAMPA IN PAGINA
     if(word==palindroma){
         risposta.innerHTML = `<p>La parola ${word} è palindroma!</p>`    
     } else {
